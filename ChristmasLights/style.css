@@ -1,0 +1,115 @@
+body {
+  margin: 0;
+  background: #111;
+}
+
+h2 {
+  position: relative;
+  color: aliceblue;
+  margin-top: 200px;
+  text-align: center;
+  letter-spacing: 0.2em;
+  font-size: 4em;
+  font-family: "Mountains of Christmas", cursive;
+  text-shadow: 0px 0px 8px rgba(255, 65, 185, 1);
+}
+
+#wire {
+  position: absolute;
+  width: 100%;
+  height: 100px;
+  top: -80px;
+  padding: 0;
+  text-align: center;
+  white-space: nowrap;
+  border-bottom: 3px solid #222;
+}
+
+#wire li {
+  position: relative;
+  top: 102px;
+  display: inline-block;
+  width: 15px;
+  height: 30px;
+  list-style: none;
+  margin: 0 15px;
+  padding: 0;
+  border-radius: 50%;
+  background-color: #fff;
+  /* animation stuff here */
+  animation-name: first-flash;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+  animation-fill-mode: both;
+}
+
+#wire li:nth-child(4n-2) {
+  animation-name: second-flash;
+}
+
+#wire li:nth-child(4n-1) {
+  animation-name: third-flash;
+}
+
+#wire li:nth-child(4n) {
+  animation-name: fourth-flash;
+}
+
+#wire li::before {
+  content: "";
+  position: absolute;
+  width: 14px;
+  height: 10px;
+  border-radius: 4px;
+  top: -5px;
+  left: 0;
+  background: #444;
+}
+
+@keyframes first-flash {
+  0%,
+  100% {
+    background-color: rgba(255, 230, 65, 1);
+    box-shadow: 0px 2px 20px 4px rgba(255, 230, 65, 1);
+  }
+  50% {
+    background-color: rgba(255, 230, 65, 0.5);
+    box-shadow: 0px 2px 20px 4px rgba(255, 230, 65, 0.3);
+  }
+}
+
+@keyframes second-flash {
+  50% {
+    background-color: rgba(255, 65, 185, 1);
+    box-shadow: 0px 2px 20px 4px rgba(255, 65, 185, 1);
+  }
+  0%,
+  100% {
+    background-color: rgba(255, 65, 185, 0.5);
+    box-shadow: 0px 2px 20px 4px rgba(255, 65, 185, 0.3);
+  }
+}
+
+@keyframes third-flash {
+  0%,
+  100% {
+    background-color: rgba(0, 255, 34, 1);
+    box-shadow: 0px 2px 20px 4px rgba(0, 255, 34, 1);
+  }
+  50% {
+    background-color: rgba(0, 255, 34, 0.5);
+    box-shadow: 0px 2px 20px 4px rgba(0, 255, 34, 0.3);
+  }
+}
+
+@keyframes fourth-flash {
+  50% {
+    background-color: rgba(0, 234, 255, 1);
+    box-shadow: 0px 2px 20px 4px rgba(0, 234, 255, 1);
+  }
+  0%,
+  100% {
+    background-color: rgba(0, 234, 255, 0.5);
+    box-shadow: 0px 2px 20px 4px rgba(0, 234, 255, 0.3);
+  }
+}
