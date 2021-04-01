@@ -1,13 +1,12 @@
 body {
+  margin: 0;
+  box-sizing: border-box;
   background-color: #222;
-  min-height: 100vh;
   color: white;
   font-family: sans-serif;
 }
 
 .glitch {
-  position: relative;
-  margin: 0 auto;
   font-size: 6rem;
   font-weight: 700;
   text-transform: uppercase;
@@ -16,13 +15,14 @@ body {
     -0.05em -0.025em 0 rgba(0, 255, 0, 0.75),
     -0.025em 0.05em 0 rgba(0, 0, 255, 0.75);
 
-  animation: glitch 500ms infinite;
+  animation: glitch 550ms infinite;
 }
 
 .glitch span {
   position: absolute;
-  top: 0;
-  left: 0;
+  top: 40%;
+  left: 30%;
+  right: 30%;
 }
 
 .glitch span:first-child {
