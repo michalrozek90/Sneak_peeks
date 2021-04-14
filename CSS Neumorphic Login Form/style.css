@@ -5,11 +5,9 @@
 
 body {
   height: 100vh;
-  width: 100vw;
   display: flex;
   align-items: center;
   justify-content: center;
-  overflow: hidden;
   font-family: "Lato", sans-serif;
   font-weight: 700;
   color: #555;
@@ -17,8 +15,10 @@ body {
 }
 
 .login {
-  width: 430px;
-  height: 700px;
+  min-width: 300px;
+  min-height: 650px;
+  width: 23vw;
+  height: 72vh;
   padding: 60px 35px 35px 35px;
   border-radius: 40px;
   background: #ecf0f3;
