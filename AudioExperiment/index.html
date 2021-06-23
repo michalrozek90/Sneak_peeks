@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Audio Experiment</title>
+    <style>
+      * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
+
+      figure {
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+      }
+      figcaption {
+        font-size: 2rem;
+        margin-bottom: 15px;
+      }
+      audio {
+        width: 50vw;
+        border: 1px solid rgb(51, 50, 50);
+        border-radius: 25px;
+        margin-bottom: 50px;
+      }
+    </style>
+  </head>
+  <body>
+    <figure>
+      <figcaption>Listen to the Breaking Bad theme</figcaption>
+      <audio controls src="./soundtracks/Breaking Bad.mp3">
+        Your browser does not support the
+        <code>audio</code> element.
+      </audio>
+      <figcaption>Listen to the Better Call Saul theme</figcaption>
+      <audio controls src="./soundtracks/Better Call Saul.mp3">
+        Your browser does not support the
+        <code>audio</code> element.
+      </audio>
+      <figcaption>Listen to the Sons of Anarchy theme</figcaption>
+      <audio controls src="./soundtracks/Sons of Anarchy.mp3">
+        Your browser does not support the
+        <code>audio</code> element.
+      </audio>
+      <figcaption>Listen to the Peaky Blinders theme</figcaption>
+      <audio controls src="./soundtracks/Peaky Blinders.mp3">
+        Your browser does not support the
+        <code>audio</code> element.
+      </audio>
+    </figure>
+    <script src="./main.js"></script>
+  </body>
+</html>
