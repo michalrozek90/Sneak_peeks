@@ -26,6 +26,7 @@ a {
   display: flex;
   justify-content: center;
   align-items: center;
+  text-align: center;
   min-height: 8em;
   min-width: 14em;
   padding: 2em;
