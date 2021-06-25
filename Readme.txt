@@ -2,8 +2,8 @@ Hello World!
 
 The 'Sneak peeks' repository is used by me to store all cool ideas about creating a web components.
 
-I built a simple website so you can navigate through all of them. Check them out if you want.
-GitHub Pages link: https://michalrozek90.github.io/Sneak_peeks/
+I built a simple website so you can navigate through all of them. Check them out!
+GitHub page link: https://michalrozek90.github.io/Sneak_peeks/
 
 I hope you can inspire yourself :)
 Cheers!
